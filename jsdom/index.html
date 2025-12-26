@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bienvenue sur mon site </title>
+</head>
+
+<body>
+    <h1>Concour d'arts Martial</h1>
+    <p>Le concours d'arts martiaux est un événement passionnant qui rassemble les meilleurs combattants du pays.</p>
+
+    <p>Pour vous inscrire, veuillez remplir le formulaire ci-dessous.</p>
+
+    <form>
+        <label for="name">Nom :</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="age">Âge:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="category">Catégorie d'arts martiaux:</label><br>
+        <select id="category" name="category" required>
+            <option value="karate">Karate</option>
+            <option value="judo">Judo</option>
+            <option value="taekwondo">Taekwondo</option>
+            <option value="kungfu">Kung Fu</option>
+        </select><br><br>
+
+        <input type="submit" value="S'inscrire" id="sumbitForm">
+</body>
+
+<div id="tableauParticipants">
+<p id="messageTableauVide">Aucun participant pour le moment</p>
+
+<div>
+    <table id="participantsTable">
+    <caption>
+        FFM developer course 2025 - Participants information
+    </caption>
+    <thead>
+        <tr>
+            <th scope="col">Person</th>
+            <th scope="col">Most interest in</th>
+            <th scope="col">Age</th>
+        </tr>
+    </thead>
+    <tbody id="infoParticipant"">
+        <!-- <tr>
+            <th scope="row">Chris</th>
+            <td>HTML tables</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th scope="row">Dennis</th>
+            <td>Web accessibility</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <th scope="row">Sarah</th>
+            <td>JavaScript frameworks</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <th scope="row">Karen</th>
+            <td>Web performance</td>
+            <td>36</td>
+        </tr> -->
+       
+    </tbody>
+    <tfoot id="ageMoyenParticipant">
+        <tr>
+            <th scope="row" colspan="2">Average age</th>
+            <td id="moyenneAge">33</td>
+        </tr>
+    </tfoot>
+</table>
+</div>
+</div>
+
+
+
+<script src="./index.js"></script>
+
+</html>
